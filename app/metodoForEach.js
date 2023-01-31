@@ -3,10 +3,12 @@ const elementoDoLivro = document.getElementById('livros')
 //.toFixed(2) fixa o preço em apenas duas casas decimais
 
 function exibeLivrosNaTela(listaDeLivros){
+  elementoDoLivro.innerHTML = ''
     listaDeLivros.forEach(livro => {
+      let disponibilidade = livro.quantidade > 0 ? 'livro_imagens' : 'livro_imagens indisponivel'
         elementoDoLivro.innerHTML +=`
         <div class="livro">
-        <img class="livro__imagens" src="${livro.imagem}" alt="${livro.alt}" />
+        <img class="${disponibilidade}" src="${livro.imagem}" alt="${livro.alt}" />
         <h2 class="livro__titulo">
           ${livro.titulo}
         </h2>
