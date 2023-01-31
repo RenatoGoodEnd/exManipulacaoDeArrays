@@ -6,6 +6,6 @@ Métodos usados
    * Método "forEach"
    * Método "MAP"
    * Método "Filter"
-   * Método "Sort"
+   * Método ".Sort"
    * Método "fetch" e "async function"
 <!--te-->
