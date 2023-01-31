@@ -1,8 +1,9 @@
 const elementoDoLivro = document.getElementById("livros")
-
+const elementoDoValorTotalDeLivroDisponivel = document.getElementById('valor_total_livros_disponiveis')
 //.toFixed(2) fixa o preço em apenas duas casas decimais
 
 function exibeLivrosNaTela(listaDeLivros){
+  elementoDoValorTotalDeLivroDisponivel.innerHTML = ''
   elementoDoLivro.innerHTML = ''
     listaDeLivros.forEach(livro => {
       let disponibilidade = livro.quantidade > 0 ? 'livro_imagens' : 'livro_imagens indisponivel'
