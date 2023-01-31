@@ -1,4 +1,4 @@
-const elementoDoLivro = document.getElementById('livros')
+const elementoDoLivro = document.getElementById("livros")
 
 //.toFixed(2) fixa o preço em apenas duas casas decimais
 

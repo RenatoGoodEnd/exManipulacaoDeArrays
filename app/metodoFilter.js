@@ -3,7 +3,9 @@ botoes.forEach(btn => btn.addEventListener('click', filtrarLivros))
 
 function filtrarLivros(){
     const elementoBotao = document.getElementById(this.id)
+    console.log(elementoBotao)
     const categoria = elementoBotao.value 
+    console.log(categoria)
     let livrosFiltrados = categoria == 'disponivel' ? livros.filter(livro => livro.quantidade > 0)
      : livros.filter(livro => livro.categoria == categoria)
      //OPERAÇÃO TERNÁRIA

@@ -1,13 +1,13 @@
 let livros = []
 const endPointDaApi = 'https://guilhermeonrails.github.io/casadocodigo/livros.json'
 getBuscaDadosLivros()
-const elementoDoLivro = document.getElementById('livros')
+//const elementoDoLivro = document.getElementById('livros')
 
 async function getBuscaDadosLivros(){
-    const res = await fetch(endPointDaApi)
+    let res = await fetch(endPointDaApi)
     livros = await res.json()
     console.table(livros)
-    let livrosComDesconto = aplicarDescontos(livros)
+    const livrosComDesconto = aplicarDescontos(livros)
     //a constante criada recebe o valor return da função
 
     exibeLivrosNaTela(livrosComDesconto)
