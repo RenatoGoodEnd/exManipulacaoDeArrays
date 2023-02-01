@@ -3,9 +3,10 @@
 Métodos usados
 =================
 <!--ts-->
-   * Método "forEach"
+   * Método ".forEach"
    * Método "MAP"
-   * Método "Filter"
-   * Método ".Sort"
-   * Método "fetch" e "async function"
+   * Método ".filter"
+   * Método ".sort"
+   * Método ".fetch" e "async function"
+   *Método ".reduce"
 <!--te-->
