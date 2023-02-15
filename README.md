@@ -1,4 +1,4 @@
-# Exercício de manitpulação de arrays 
+# Exercício de manipulação de arrays 
 
 Métodos usados
 =================
